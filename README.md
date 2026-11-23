@@ -23,10 +23,20 @@ Każdy push na `main` zrobi nowe wdrożenie produkcyjne, a pull requesty dostan�
 Konfiguracja w `vercel.json`: ładne adresy (`/projekt` zamiast `/projekt.html`) i podstawowe nagłówki bezpieczeństwa.
 `.vercelignore` wyklucza z wdrożenia folder `stara-wersja/`, README i pliki edytora.
 
+## Wdrożenie na GitHub Pages
+1. Wypchnij repo na GitHub.
+2. *Settings → Pages → Build and deployment → Source:* **GitHub Actions**.
+3. Każdy push na `main` uruchamia `.github/workflows/pages.yml`, który publikuje tylko pliki strony
+   (bez `stara-wersja/` i README). Adres: `https://<organizacja>.github.io/<repo>/`.
+
+Uwagi: Pages dla **prywatnego** repo wymaga płatnego planu GitHub (Pro/Team/Enterprise) – na darmowym planie repo musi być publiczne.
+Nagłówki z `vercel.json` nie działają na Pages; adres `/projekt` działa bez `.html` także tam.
+
 ## Struktura
 - `index.html` – strona główna: hero z pokazem zdjęć, realizacje z filtrem, pracownia, oferta (rozwijana), proces, opinie, kontakt
 - `projekt.html` – podstrona projektu: metryczka, opis, galeria z powiększaniem zdjęć, „następny projekt”
 - `css/style.css`, `js/main.js`
-- `404.html` – strona błędu (Vercel pokazuje ją automatycznie)
+- `404.html` – strona błędu (Vercel i GitHub Pages pokazują ją automatycznie)
+- `.github/workflows/pages.yml` – automatyczna publikacja na GitHub Pages
 - `stara-wersja/` – poprzedni szablon, niewdrażany
 # Archi
