@@ -1,0 +1,5 @@
+# Pliki, które nie trafiają na Vercel
+stara-wersja
+.idea
+.DS_Store
+README.md

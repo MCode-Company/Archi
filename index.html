@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LINIA — architektura i projektowanie wnętrz</title>
+<meta name="description" content="Projekty domów i wnętrz — od koncepcji, przez projekt budowlany, po nadzór autorski.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter+Tight:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+<!--
+  ZDJĘCIA: wszystkie zdjęcia to przykłady z Unsplash (hotlink).
+  Docelowo wrzuć własne pliki do folderu img/ i podmień atrybuty src,
+  np. src="img/dom-pod-lasem.jpg".
+  NAZWY: „LINIA”, „Anna Kowalska”, projekty i ceny są przykładowe.
+-->
+
+<header class="site-header" data-header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="LINIA — strona główna"><b>LINIA</b><span>architektura · wnętrza</span></a>
+    <nav class="nav" aria-label="Główna nawigacja">
+      <a href="#realizacje"><sup>01</sup>Realizacje</a>
+      <a href="#pracownia"><sup>02</sup>Pracownia</a>
+      <a href="#oferta"><sup>03</sup>Oferta</a>
+      <a href="#proces"><sup>04</sup>Proces</a>
+      <a href="#kontakt"><sup>05</sup>Kontakt</a>
+    </nav>
+    <div class="header-cta">
+      <a class="ask" href="#kontakt"><span>Zapytanie</span><span aria-hidden="true">→</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-open>Menu</button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu-top">
+    <a class="logo" href="#top" data-menu-close><b>LINIA</b></a>
+    <button class="menu-btn" style="display:inline-flex" type="button" data-menu-close>Zamknij ✕</button>
+  </div>
+  <nav aria-label="Menu mobilne">
+    <a href="#realizacje" data-menu-close><small>01</small>Realizacje</a>
+    <a href="#pracownia" data-menu-close><small>02</small>Pracownia</a>
+    <a href="#oferta" data-menu-close><small>03</small>Oferta</a>
+    <a href="#proces" data-menu-close><small>04</small>Proces</a>
+    <a href="#kontakt" data-menu-close><small>05</small>Kontakt</a>
+  </nav>
+  <div class="menu-foot">
+    <a href="mailto:hello@linia.studio">hello@linia.studio</a>
+    <a href="tel:+48600100200">+48 600 100 200</a>
+  </div>
+</div>
+
+<main>
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" aria-label="Wybrane realizacje — pokaz zdjęć">
+    <div class="hero-slides" data-slides>
+      <div class="hero-slide is-active" data-name="Dom pod Lasem — Konstancin">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2200&q=80" alt="Nowoczesny dom jednorodzinny o zmierzchu, z dużymi przeszkleniami">
+      </div>
+      <div class="hero-slide" data-name="Apartament Mokotów — Warszawa">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=80" alt="Jasny salon z drewnianą ścianą i dużym oknem" loading="lazy">
+      </div>
+      <div class="hero-slide" data-name="Dom Biały — Józefów">
+        <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=2200&q=80" alt="Biały, minimalistyczny dom o prostej bryle" loading="lazy">
+      </div>
+    </div>
+
+    <div class="wrap hero-content">
+      <h1 class="display split" data-split>
+        <span class="line"><span>Przestrzeń</span></span>
+        <span class="line"><span>szyta na</span></span>
+        <span class="line"><span class="serif">miarę życia.</span></span>
+      </h1>
+      <div class="hero-bottom">
+        <p>Projektuję domy i wnętrza, które powstają z rozmowy — o świetle, rytmie dnia i rzeczach, które naprawdę są ważne.</p>
+        <div class="hero-counter" aria-live="polite">
+          <span data-count>01 / 03</span>
+          <span class="bar"><i data-bar></i></span>
+          <span class="name" data-slide-name>Dom pod Lasem — Konstancin</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MANIFEST ===================== -->
+  <section class="wrap section">
+    <div class="manifest">
+      <p class="label reveal"><span class="num">00 /</span> Pracownia LINIA</p>
+      <p class="manifest-text reveal">Wierzę, że dobra architektura nie krzyczy. Jest <span class="serif">cicha, precyzyjna</span> i uważna na ludzi, którzy będą w niej żyć — od proporcji bryły po fakturę klamki.</p>
+    </div>
+    <div class="manifest-media">
+      <figure class="reveal">
+        <div class="frame ar-land"><img class="parallax-img" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=80" alt="Spokojny salon w ciepłych, jasnych barwach" loading="lazy"></div>
+        <figcaption><span>Apartament Saska Kępa</span><span>2025</span></figcaption>
+      </figure>
+      <figure class="reveal">
+        <div class="frame ar-port"><img class="parallax-img" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80" alt="Architektka szkicująca plan budynku na kalce" loading="lazy"></div>
+        <figcaption><span>Każdy projekt zaczyna się od szkicu</span><span>Pracownia</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Domy jednorodzinne</span><span class="serif">—</span><span>Wnętrza mieszkań</span><span class="serif">—</span><span>Przebudowy</span><span class="serif">—</span><span>Wizualizacje 3D</span><span class="serif">—</span><span>Nadzór autorski</span><span class="serif">—</span>
+      <span>Domy jednorodzinne</span><span class="serif">—</span><span>Wnętrza mieszkań</span><span class="serif">—</span><span>Przebudowy</span><span class="serif">—</span><span>Wizualizacje 3D</span><span class="serif">—</span><span>Nadzór autorski</span><span class="serif">—</span>
+    </div>
+  </div>
+
+  <!-- ===================== 01 REALIZACJE ===================== -->
+  <section id="realizacje" class="wrap section">
+    <div class="sec-head">
+      <p class="label reveal"><span class="num">01 /</span> Realizacje</p>
+      <div class="sec-head-row">
+        <h2 class="h2 reveal">Wybrane<br><span class="serif">projekty.</span></h2>
+        <div class="filters reveal" role="group" aria-label="Filtruj projekty">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">Wszystkie</button>
+          <button class="filter-btn" type="button" data-filter="arch" aria-pressed="false">Architektura</button>
+          <button class="filter-btn" type="button" data-filter="int" aria-pressed="false">Wnętrza</button>
+        </div>
+      </div>
+    </div>
+
+    <a class="featured reveal" href="projekt.html">
+      <div class="frame"><img class="parallax-img" src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=2200&q=80" alt="Drewniany dom wśród ośnieżonych sosen, odbity w tafli jeziora" loading="lazy"></div>
+      <div class="featured-meta">
+        <div>
+          <p class="label" style="margin-bottom:14px">Projekt wyróżniony · 2025</p>
+          <p class="h2">Dom w <span class="serif">Sosnach</span></p>
+        </div>
+        <span class="tag">Architektura + wnętrza · 186 m² · Puszcza Kampinoska →</span>
+      </div>
+    </a>
+
+    <div class="projects">
+      <!-- Kafelek projektu: skopiuj <a class="project">…</a>. data-cat="arch" lub "int" -->
+      <a class="project reveal" data-cat="arch" href="projekt.html">
+        <div class="frame ar-land"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1400&q=80" alt="Dom z ciemną elewacją i drewnianymi lamelami" loading="lazy"></div>
+        <div class="project-meta"><span class="no">01</span><h3 class="h3">Dom pod Lasem</h3><span class="cat">Architektura</span></div>
+        <p class="project-info">Konstancin · 214 m² · 2025</p>
+      </a>
+      <a class="project reveal" data-cat="int" href="projekt.html">
+        <div class="frame ar-tall"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80" alt="Salon w ciepłych barwach z niską sofą" loading="lazy"></div>
+        <div class="project-meta"><span class="no">02</span><h3 class="h3">Apartament Mokotów</h3><span class="cat">Wnętrza</span></div>
+        <p class="project-info">Warszawa · 96 m² · 2025</p>
+      </a>
+      <a class="project reveal" data-cat="arch" href="projekt.html">
+        <div class="frame ar-port"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1100&q=80" alt="Dom z betonu i drewna za murem ogrodu" loading="lazy"></div>
+        <div class="project-meta"><span class="no">03</span><h3 class="h3">Dom na Skarpie</h3><span class="cat">Architektura</span></div>
+        <p class="project-info">Gdynia · 248 m² · 2024</p>
+      </a>
+      <a class="project reveal" data-cat="int" href="projekt.html">
+        <div class="frame ar-land"><img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1400&q=80" alt="Otwarta kuchnia z jadalnią i dużym przeszkleniem" loading="lazy"></div>
+        <div class="project-meta"><span class="no">04</span><h3 class="h3">Mieszkanie dla rodziny</h3><span class="cat">Wnętrza</span></div>
+        <p class="project-info">Kraków · 118 m² · 2024</p>
+      </a>
+      <a class="project reveal" data-cat="arch" href="projekt.html">
+        <div class="frame ar-land"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1400&q=80" alt="Przebudowany dom z ceglastą okładziną elewacji" loading="lazy"></div>
+        <div class="project-meta"><span class="no">05</span><h3 class="h3">Przebudowa willi</h3><span class="cat">Architektura</span></div>
+        <p class="project-info">Podkowa Leśna · 320 m² · 2023</p>
+      </a>
+      <a class="project reveal" data-cat="int" href="projekt.html">
+        <div class="frame ar-tall"><img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1000&q=80" alt="Jadalnia z zielonymi krzesłami i roślinami" loading="lazy"></div>
+        <div class="project-meta"><span class="no">06</span><h3 class="h3">Loft na Pradze</h3><span class="cat">Wnętrza</span></div>
+        <p class="project-info">Warszawa · 84 m² · 2023</p>
+      </a>
+      <a class="project reveal" data-cat="arch" href="projekt.html">
+        <div class="frame ar-port"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1100&q=80" alt="Dom wakacyjny oświetlony o zmierzchu" loading="lazy"></div>
+        <div class="project-meta"><span class="no">07</span><h3 class="h3">Dom wakacyjny</h3><span class="cat">Architektura</span></div>
+        <p class="project-info">Mazury · 142 m² · 2022</p>
+      </a>
+      <a class="project reveal" data-cat="int" href="projekt.html">
+        <div class="frame ar-land"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=80" alt="Salon z galerią obrazów i miękkimi fotelami" loading="lazy"></div>
+        <div class="project-meta"><span class="no">08</span><h3 class="h3">Apartament nad morzem</h3><span class="cat">Wnętrza</span></div>
+        <p class="project-info">Sopot · 102 m² · 2022</p>
+      </a>
+    </div>
+
+    <div class="projects-more reveal"><a class="link-arrow" href="projekt.html">Zobacz wszystkie projekty <span aria-hidden="true">→</span></a></div>
+  </section>
+
+  <!-- ===================== 02 PRACOWNIA ===================== -->
+  <section id="pracownia" class="dark">
+    <div class="wrap section">
+      <div class="sec-head">
+        <p class="label reveal"><span class="num">02 /</span> Pracownia</p>
+        <h2 class="h2 reveal">Za projektem<br>stoi <span class="serif">człowiek.</span></h2>
+      </div>
+      <div class="studio">
+        <figure class="studio-photo reveal" style="margin:0">
+          <div class="frame ar-port"><img class="parallax-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1100&q=80" alt="Portret architektki Anny Kowalskiej" loading="lazy"></div>
+          <figcaption>Anna Kowalska — architektka, założycielka pracowni</figcaption>
+        </figure>
+        <div class="studio-text">
+          <p class="lead reveal">Od dwunastu lat projektuję domy i wnętrza dla ludzi, którzy chcą mieszkać świadomie — bez nadmiaru, za to z dbałością o światło, materiał i detal.</p>
+          <p class="muted reveal">Ukończyłam Wydział Architektury Politechniki Warszawskiej, pracowałam w pracowniach w Warszawie i Kopenhadze. Dziś prowadzę kameralne studio — biorę kilka projektów rocznie, żeby każdemu poświęcić pełną uwagę.</p>
+          <p class="muted reveal">Lubię naturalne materiały, które ładnie się starzeją: drewno, kamień, tynk wapienny. Projektuję z myślą o tym, jak dom będzie wyglądał za dwadzieścia lat, a nie tylko na zdjęciach w dniu odbioru.</p>
+          <div class="creds reveal"><span>Uprawnienia budowlane bez ograniczeń</span><span>Członkini IARP</span><span>Projekty zdalne</span></div>
+          <div class="stats reveal">
+            <div><p class="stat-num">12<sup>+</sup></p><p class="stat-label">lat w zawodzie</p></div>
+            <div><p class="stat-num">80<sup>+</sup></p><p class="stat-label">zrealizowanych projektów</p></div>
+            <div><p class="stat-num">4</p><p class="stat-label">nagrody i wyróżnienia</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 03 OFERTA ===================== -->
+  <section id="oferta" class="wrap section">
+    <div class="sec-head">
+      <p class="label reveal"><span class="num">03 /</span> Oferta</p>
+      <div class="sec-head-row">
+        <h2 class="h2 reveal">Od działki<br>do <span class="serif">klucza w drzwiach.</span></h2>
+        <p class="muted reveal" style="margin:0;max-width:36ch">Każdy zakres można zamówić osobno albo połączyć — wtedy architektura i wnętrze powstają jako jedna spójna całość.</p>
+      </div>
+    </div>
+
+    <div class="offer reveal">
+      <details open>
+        <summary><span class="o-no">01</span><span class="o-title">Architektura</span><span class="o-from">od 180 zł/m²</span><span class="o-icon" aria-hidden="true"></span></summary>
+        <div class="offer-body">
+          <p>Domy jednorodzinne, rozbudowy, przebudowy i adaptacje projektów gotowych. Prowadzę projekt od analizy działki aż po pozwolenie na budowę.</p>
+          <ul class="price-list">
+            <li><span>Analiza działki i koncepcja</span><span>od 6 000 zł</span></li>
+            <li><span>Projekt budowlany i formalności</span><span>od 180 zł/m²</span></li>
+            <li><span>Projekt techniczny</span><span>od 90 zł/m²</span></li>
+            <li><span>Nadzór autorski</span><span>600 zł / wizyta</span></li>
+          </ul>
+          <div class="frame ar-port"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=900&q=80" alt="Biała, geometryczna bryła budynku" loading="lazy"></div>
+        </div>
+      </details>
+      <details>
+        <summary><span class="o-no">02</span><span class="o-title">Projektowanie wnętrz</span><span class="o-from">od 120 zł/m²</span><span class="o-icon" aria-hidden="true"></span></summary>
+        <div class="offer-body">
+          <p>Mieszkania, domy i lokale usługowe — kompleksowo albo w wybranym zakresie. Z wizualizacjami, rysunkami wykonawczymi i listą zakupów.</p>
+          <ul class="price-list">
+            <li><span>Układ funkcjonalny i koncepcja</span><span>od 70 zł/m²</span></li>
+            <li><span>Projekt wykonawczy z wizualizacjami 3D</span><span>od 120 zł/m²</span></li>
+            <li><span>Kompletacja i zamówienia</span><span>wycena indywidualna</span></li>
+          </ul>
+          <div class="frame ar-port"><img src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=900&q=80" alt="Kuchnia z drewnianymi frontami i jasnym blatem" loading="lazy"></div>
+        </div>
+      </details>
+      <details>
+        <summary><span class="o-no">03</span><span class="o-title">Konsultacje i nadzór</span><span class="o-from">od 450 zł</span><span class="o-icon" aria-hidden="true"></span></summary>
+        <div class="offer-body">
+          <p>Gdy potrzebujesz drugiej pary oczu: przed zakupem działki lub mieszkania, przy wyborze materiałów albo w trakcie budowy.</p>
+          <ul class="price-list">
+            <li><span>Konsultacja online (90 min)</span><span>450 zł</span></li>
+            <li><span>Konsultacja na miejscu</span><span>700 zł</span></li>
+            <li><span>Nadzór nad wykończeniem</span><span>wycena indywidualna</span></li>
+          </ul>
+          <div class="frame ar-port"><img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=900&q=80" alt="Schody z drewnianymi stopniami i stalową balustradą" loading="lazy"></div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===================== PAS Z CYTATEM ===================== -->
+  <section class="band" aria-label="Motto pracowni">
+    <div class="frame"><img class="parallax-img" src="https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=2200&q=80" alt="" loading="lazy"></div>
+    <blockquote class="reveal">Dobry dom zaczyna się od <span class="serif">światła</span>, proporcji i ludzi.<cite>— zasada pracowni</cite></blockquote>
+  </section>
+
+  <!-- ===================== 04 PROCES ===================== -->
+  <section id="proces" class="wrap section">
+    <div class="sec-head">
+      <p class="label reveal"><span class="num">04 /</span> Proces</p>
+      <h2 class="h2 reveal">Pięć kroków,<br><span class="serif">bez niespodzianek.</span></h2>
+    </div>
+    <div class="process">
+      <div class="frame ar-tall reveal"><img class="parallax-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1100&q=80" alt="Jasne wnętrze pracowni z dużymi oknami" loading="lazy"></div>
+      <ol class="steps">
+        <li class="step reveal"><span class="step-num">01</span><h3 class="h3">Rozmowa</h3><p>Poznaję Twoje potrzeby, budżet i termin. Ustalamy zakres i harmonogram.</p><span class="time">1 tydzień</span></li>
+        <li class="step reveal"><span class="step-num">02</span><h3 class="h3">Inwentaryzacja</h3><p>Pomiary, analiza działki lub lokalu, dokumentacja stanu istniejącego.</p><span class="time">1–2 tygodnie</span></li>
+        <li class="step reveal"><span class="step-num">03</span><h3 class="h3">Koncepcja</h3><p>Układ, bryła lub aranżacja, moodboard i pierwsze wizualizacje do wspólnej dyskusji.</p><span class="time">3–5 tygodni</span></li>
+        <li class="step reveal"><span class="step-num">04</span><h3 class="h3">Projekt</h3><p>Dokumentacja budowlana lub wykonawcza, zestawienia materiałów i kosztów.</p><span class="time">4–10 tygodni</span></li>
+        <li class="step reveal"><span class="step-num">05</span><h3 class="h3">Realizacja</h3><p>Nadzór autorski i wsparcie ekipy aż do odbioru — i pierwszej kawy w nowym miejscu.</p><span class="time">wg budowy</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== OPINIE ===================== -->
+  <section class="wrap section" style="padding-top:0">
+    <div class="sec-head" style="margin-bottom:48px">
+      <p class="label reveal">Opinie</p>
+      <h2 class="h2 reveal" style="font-size:clamp(32px,3.6vw,56px)">Co mówią <span class="serif">klienci.</span></h2>
+    </div>
+    <div class="quotes">
+      <figure class="quote reveal">
+        <blockquote>„Anna usłyszała to, czego sami nie umieliśmy nazwać. Dom jest dokładnie taki, jak nasze życie — tylko lepiej poukładany.”</blockquote>
+        <figcaption><div>Marta i Tomasz<span>Dom pod Lasem, Konstancin</span></div></figcaption>
+      </figure>
+      <figure class="quote reveal">
+        <blockquote>„Zero stresu na budowie. Każdy detal był rozrysowany, a ekipa po prostu wiedziała, co robić.”</blockquote>
+        <figcaption><div>Paweł<span>Apartament Mokotów, Warszawa</span></div></figcaption>
+      </figure>
+      <figure class="quote reveal">
+        <blockquote>„Budżet był napięty, a efekt wygląda jak z magazynu. Najlepsza decyzja przy remoncie.”</blockquote>
+        <figcaption><div>Karolina<span>Loft na Pradze, Warszawa</span></div></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== 05 KONTAKT ===================== -->
+  <section id="kontakt" class="section" style="background:var(--paper-2)">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="label reveal"><span class="num">05 /</span> Kontakt</p>
+        <h2 class="h2 reveal">Opowiedz mi<br>o swoim <span class="serif">miejscu.</span></h2>
+      </div>
+      <div class="contact">
+        <div class="contact-info reveal">
+          <p class="lead" style="max-width:34ch">Napisz kilka zdań o tym, co planujesz. Odpowiem w ciągu dwóch dni roboczych i zaproponuję termin pierwszej rozmowy.</p>
+          <dl class="contact-list">
+            <dt>E-mail</dt><dd><a href="mailto:hello@linia.studio">hello@linia.studio</a></dd>
+            <dt>Telefon</dt><dd><a href="tel:+48600100200">+48 600 100 200</a></dd>
+            <dt>Pracownia</dt><dd>ul. Mokotowska 12/4<br>00-561 Warszawa</dd>
+            <dt>Obszar</dt><dd>Warszawa i okolice, projekty zdalne w całej Polsce</dd>
+          </dl>
+        </div>
+
+        <form id="contact-form" class="form reveal" action="#" method="post" novalidate>
+          <fieldset class="chips full">
+            <legend>Czego dotyczy projekt?</legend>
+            <label class="chip"><input type="radio" name="type" value="dom" checked><span>Dom</span></label>
+            <label class="chip"><input type="radio" name="type" value="wnetrze"><span>Wnętrze</span></label>
+            <label class="chip"><input type="radio" name="type" value="przebudowa"><span>Przebudowa</span></label>
+            <label class="chip"><input type="radio" name="type" value="konsultacja"><span>Konsultacja</span></label>
+          </fieldset>
+          <label class="field">Imię i nazwisko<input type="text" name="name" autocomplete="name" required></label>
+          <label class="field">E-mail<input type="email" name="email" autocomplete="email" required></label>
+          <label class="field">Telefon (opcjonalnie)<input type="tel" name="phone" autocomplete="tel"></label>
+          <label class="field">Metraż (m²)<input type="number" name="area" min="1" inputmode="numeric"></label>
+          <label class="field full">Kilka słów o projekcie<textarea name="message" rows="4" required></textarea></label>
+          <label class="consent full"><input type="checkbox" name="rodo" required>Wyrażam zgodę na przetwarzanie danych w celu odpowiedzi na zapytanie. <a href="#">Polityka prywatności</a></label>
+          <div class="form-foot full">
+            <p class="form-status" role="status" aria-live="polite"></p>
+            <button class="btn" type="submit">Wyślij zapytanie <span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <a class="footer-cta" href="mailto:hello@linia.studio">
+      <p class="display">Zaprojektujmy<br>to <span class="serif">razem.</span></p>
+      <span class="mail">hello@linia.studio <span aria-hidden="true">→</span></span>
+    </a>
+    <div class="footer-grid">
+      <div><h4>Pracownia</h4><p>ul. Mokotowska 12/4<br>00-561 Warszawa<br>pon.–pt. 9:00–17:00</p></div>
+      <div><h4>Kontakt</h4><ul><li><a href="mailto:hello@linia.studio">hello@linia.studio</a></li><li><a href="tel:+48600100200">+48 600 100 200</a></li></ul></div>
+      <div><h4>Menu</h4><ul><li><a href="#realizacje">Realizacje</a></li><li><a href="#pracownia">Pracownia</a></li><li><a href="#oferta">Oferta</a></li><li><a href="#kontakt">Kontakt</a></li></ul></div>
+      <div><h4>Social</h4><ul><li><a data-social="instagram" href="#">Instagram</a></li><li><a data-social="pinterest" href="#">Pinterest</a></li><li><a data-social="behance" href="#">Behance</a></li><li><a data-social="linkedin" href="#">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> LINIA Anna Kowalska · NIP 000-000-00-00</span>
+      <a href="#">Polityka prywatności</a>
+      <a href="#top">Do góry ↑</a>
+    </div>
+  </div>
+  <p class="footer-word" aria-hidden="true">LINIA</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
