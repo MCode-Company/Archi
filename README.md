@@ -29,3 +29,4 @@ Konfiguracja w `vercel.json`: ładne adresy (`/projekt` zamiast `/projekt.html`)
 - `css/style.css`, `js/main.js`
 - `404.html` – strona błędu (Vercel pokazuje ją automatycznie)
 - `stara-wersja/` – poprzedni szablon, niewdrażany
+# Archi
